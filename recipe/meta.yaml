@@ -7,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/mgaitan/sphinxcontrib-mermaid/archive/refs/tags/{{ version }}.tar.gz
+  url: https://github.com/mgaitan/{{ name }}/archive/refs/tags/{{ version }}.tar.gz
   sha256: 824f90ba951c380a3b991b3435a42cbc2972e20aa5dd1b8e0788128ee688e759
 
 build:
