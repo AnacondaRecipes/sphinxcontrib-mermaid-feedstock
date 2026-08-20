@@ -27,14 +27,19 @@ requirements:
     - pyyaml
 
 test:
+  source_files:
+    - tests
   imports:
     - sphinxcontrib
     - sphinxcontrib.mermaid
   commands:
     - pip check
     - python -c "from importlib.metadata import version; assert(version('{{ name }}')=='{{ version }}')"
+    # missing myst_parser
+    - pytest -vv --deselect=tests/test_html.py::test_html_raw_from_markdown tests
   requires:
     - pip
+    - pytest
 
 about:
   home: https://github.com/mgaitan/sphinxcontrib-mermaid
