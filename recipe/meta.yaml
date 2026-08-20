@@ -40,6 +40,7 @@ test:
   requires:
     - pip
     - pytest
+    - defusedxml
 
 about:
   home: https://github.com/mgaitan/sphinxcontrib-mermaid
