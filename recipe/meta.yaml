@@ -13,21 +13,16 @@ source:
 build:
   skip: true  # [py<310]
   number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps --no-build-isolation -vv
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
-    - python
     - pip
-    - hatchling
+    - python >=3.7
   run:
-    - python
-    #- sphinx
-    #- docutils
-
-    - jinja2
+    - python >=3.7
     - sphinx
-    - pyyaml
+    - docutils
 
 test:
   imports:
@@ -41,7 +36,7 @@ about:
   home: https://github.com/mgaitan/sphinxcontrib-mermaid
   summary: Mermaid diagrams in yours Sphinx powered docs
   license: BSD-2-Clause
-  license_file: LICENSE
+  license_file: LICENSE.rst
 
 extra:
   recipe-maintainers:
