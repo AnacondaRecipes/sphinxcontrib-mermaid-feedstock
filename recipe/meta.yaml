@@ -44,8 +44,14 @@ test:
 about:
   home: https://github.com/mgaitan/sphinxcontrib-mermaid
   summary: Mermaid diagrams in yours Sphinx powered docs
+  description: |
+    This extension allows you to embed Mermaid graphs in your documents, including
+    general flowcharts, sequence diagrams, gantt diagrams and more.
   license: BSD-2-Clause
+  license_family: BSD
   license_file: LICENSE
+  dev_url: https://github.com/mgaitan/sphinxcontrib-mermaid
+  doc_url: https://sphinxcontrib-mermaid-demo.readthedocs.io
 
 extra:
   recipe-maintainers:
