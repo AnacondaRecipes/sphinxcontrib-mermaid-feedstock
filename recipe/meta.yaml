@@ -17,12 +17,14 @@ build:
 
 requirements:
   host:
+    - python
     - pip
-    - python >=3.7
+    - hatchling
   run:
-    - python >=3.7
+    - python
+    - jinja2
     - sphinx
-    - docutils
+    - pyyaml
 
 test:
   imports:
